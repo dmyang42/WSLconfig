@@ -23,13 +23,13 @@
 
 #### Anaconda :waxing_gibbous_moon: 
 
-下载anaconda只有一个地方需要注意下，就是我们使用的Shell是zsh，而非bash。在anaconda下载中会提示你，是否允许anaconda在==~/.bashrc==中加入环境变量，这个是不论你设置的default shell为什么都会安在bash中。比较直观的做法就是往==~/.zshrc==中加入
+下载anaconda只有一个地方需要注意下，就是我们使用的Shell是zsh，而非bash。在anaconda下载中会提示你，是否允许anaconda在~/.bashrc中加入环境变量，这个是不论你设置的default shell为什么都会安在bash中。比较直观的做法就是往~/.zshrc中加入
 
 ```shell
 export PATH="/root/anaconda3/bin:$PATH"
 ```
 
-但如果担心以后又出这样的问题，其实可以在==~/.bashrc==最后加入
+但如果担心以后又出这样的问题，其实可以在~/.bashrc最后加入
 
 ```shell
 bash -c zsh
@@ -41,7 +41,7 @@ bash -c zsh
 ➜  topol chsh -s /bin/bash
 ```
 
-这样默认shell为bash，在每次启动执行完==~/.bashrc==后环境变量都已经加载了，这时候再进入zsh作为工作的shell。非常奇怪的做法。 :pig_nose: 
+这样默认shell为bash，在每次启动执行完~/.bashrc后环境变量都已经加载了，这时候再进入zsh作为工作的shell。非常奇怪的做法。 :pig_nose: 
 
 不管怎样，成功安装好anaconda后，就会有如下结果
 
