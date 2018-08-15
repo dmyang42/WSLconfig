@@ -69,7 +69,7 @@ WSL自带了OpenSSH，所以我们不用再apt-get之类的，直接
 ➜  topol vim /etc/ssh/sshd_config
 ```
 
-进入==sshd_config==后，以下内容取消注释或添加即可
+进入sshd_config后，以下内容取消注释或添加即可
 
 ```shell
 # default port is 22, which is occupied by win
